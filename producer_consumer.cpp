@@ -21,7 +21,7 @@ void* producer(void* args) {
         // Produce
         int x = rand() % 100;
         sleep(1);
-
+         
         // Add to the buffer
         sem_wait(&semEmpty);
         pthread_mutex_lock(&mutexBuffer);
